@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora avanzada con diseño premium y funcionalidad completa">
+    <title>Calculadora Avanzada | Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Portfolio</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+            </div>
+            <a href="index.html" class="btn btn-secondary btn-back">← Volver al Inicio</a>
+        </div>
+    </nav>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-header">
+                <h1 class="page-title gradient-text">Calculadora Avanzada</h1>
+                <p class="page-subtitle">Calculadora científica con diseño premium y funcionalidad completa</p>
+            </div>
+
+            <div class="calculator-container">
+                <!-- Calculator Display -->
+                <div class="calculator">
+                    <div class="calculator-display">
+                        <div class="display-history" id="history"></div>
+                        <div class="display-current" id="display">0</div>
+                    </div>
+
+                    <!-- Calculator Buttons -->
+                    <div class="calculator-buttons">
+                        <!-- Row 1: Functions -->
+                        <button class="btn-calc btn-function" data-action="clear">C</button>
+                        <button class="btn-calc btn-function" data-action="delete">⌫</button>
+                        <button class="btn-calc btn-function" data-action="percent">%</button>
+                        <button class="btn-calc btn-operator" data-operator="/">÷</button>
+
+                        <!-- Row 2 -->
+                        <button class="btn-calc btn-number" data-number="7">7</button>
+                        <button class="btn-calc btn-number" data-number="8">8</button>
+                        <button class="btn-calc btn-number" data-number="9">9</button>
+                        <button class="btn-calc btn-operator" data-operator="*">×</button>
+
+                        <!-- Row 3 -->
+                        <button class="btn-calc btn-number" data-number="4">4</button>
+                        <button class="btn-calc btn-number" data-number="5">5</button>
+                        <button class="btn-calc btn-number" data-number="6">6</button>
+                        <button class="btn-calc btn-operator" data-operator="-">−</button>
+
+                        <!-- Row 4 -->
+                        <button class="btn-calc btn-number" data-number="1">1</button>
+                        <button class="btn-calc btn-number" data-number="2">2</button>
+                        <button class="btn-calc btn-number" data-number="3">3</button>
+                        <button class="btn-calc btn-operator" data-operator="+">+</button>
+
+                        <!-- Row 5 -->
+                        <button class="btn-calc btn-number btn-zero" data-number="0">0</button>
+                        <button class="btn-calc btn-number" data-number=".">.</button>
+                        <button class="btn-calc btn-equals" data-action="equals">=</button>
+                    </div>
+                </div>
+
+                <!-- Scientific Calculator -->
+                <div class="calculator scientific-calc">
+                    <div class="scientific-header">
+                        <h3>Funciones Científicas</h3>
+                    </div>
+
+                    <div class="scientific-buttons">
+                        <button class="btn-calc btn-scientific" data-scientific="sin">sin</button>
+                        <button class="btn-calc btn-scientific" data-scientific="cos">cos</button>
+                        <button class="btn-calc btn-scientific" data-scientific="tan">tan</button>
+                        <button class="btn-calc btn-scientific" data-scientific="log">log</button>
+
+                        <button class="btn-calc btn-scientific" data-scientific="sqrt">√</button>
+                        <button class="btn-calc btn-scientific" data-scientific="square">x²</button>
+                        <button class="btn-calc btn-scientific" data-scientific="cube">x³</button>
+                        <button class="btn-calc btn-scientific" data-scientific="power">xʸ</button>
+
+                        <button class="btn-calc btn-scientific" data-scientific="pi">π</button>
+                        <button class="btn-calc btn-scientific" data-scientific="e">e</button>
+                        <button class="btn-calc btn-scientific" data-scientific="factorial">n!</button>
+                        <button class="btn-calc btn-scientific" data-scientific="inverse">1/x</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Panel -->
+            <div class="history-panel">
+                <div class="history-header">
+                    <h3>Historial de Cálculos</h3>
+                    <button class="btn-clear-history" id="clearHistory">Limpiar</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <div class="history-empty">
+                        <span class="empty-icon">📊</span>
+                        <p>No hay cálculos en el historial</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔢</div>
+                    <h3>Operaciones Básicas</h3>
+                    <p>Suma, resta, multiplicación y división con precisión</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧮</div>
+                    <h3>Funciones Científicas</h3>
+                    <p>Trigonometría, logaritmos, potencias y más</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Historial Completo</h3>
+                    <p>Guarda y revisa todos tus cálculos anteriores</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>Soporte de Teclado</h3>
+                    <p>Usa tu teclado para cálculos más rápidos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mi Portafolio. Calculadora Avanzada con JavaScript</p>
+                <a href="index.html" class="btn btn-secondary">← Volver al Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/calculator.js"></script>
+</body>
+
+</html>

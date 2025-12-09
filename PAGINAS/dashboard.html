@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard interactivo con visualización de datos y gráficos animados">
+    <title>Dashboard de Datos | Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Portfolio</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+            </div>
+            <a href="index.html" class="btn btn-secondary btn-back">← Volver al Inicio</a>
+        </div>
+    </nav>
+
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1 class="page-title gradient-text">Dashboard de Datos</h1>
+                <p class="page-subtitle">Visualización de datos en tiempo real con gráficos animados</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3 class="stat-value" data-target="12458">0</h3>
+                        <p class="stat-label">Usuarios Activos</p>
+                        <span class="stat-change positive">+12.5%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <h3 class="stat-value" data-target="48920">$0</h3>
+                        <p class="stat-label">Ingresos</p>
+                        <span class="stat-change positive">+8.3%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📦</div>
+                    <div class="stat-info">
+                        <h3 class="stat-value" data-target="3842">0</h3>
+                        <p class="stat-label">Productos</p>
+                        <span class="stat-change negative">-2.1%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-info">
+                        <h3 class="stat-value" data-target="98">0%</h3>
+                        <p class="stat-label">Satisfacción</p>
+                        <span class="stat-change positive">+5.2%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Ventas Mensuales</h3>
+                        <select class="chart-select" id="salesPeriod">
+                            <option>Últimos 6 meses</option>
+                            <option>Último año</option>
+                        </select>
+                    </div>
+                    <canvas id="salesChart"></canvas>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Distribución de Categorías</h3>
+                    </div>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+
+                <div class="chart-card chart-wide">
+                    <div class="chart-header">
+                        <h3>Tráfico en Tiempo Real</h3>
+                        <div class="live-indicator">
+                            <span class="pulse"></span>
+                            En vivo
+                        </div>
+                    </div>
+                    <canvas id="trafficChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="table-card">
+                <div class="table-header">
+                    <h3>Productos Más Vendidos</h3>
+                    <input type="text" class="table-search" placeholder="Buscar producto..." id="tableSearch">
+                </div>
+                <div class="table-container">
+                    <table class="data-table" id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Ventas</th>
+                                <th>Ingresos</th>
+                                <th>Tendencia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mi Portafolio. Dashboard con Canvas API y JavaScript</p>
+                <a href="index.html" class="btn btn-secondary">← Volver al Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+
+</html>

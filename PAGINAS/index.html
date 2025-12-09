@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de desarrollo web - HTML5, CSS3, JavaScript">
+    <title>Mi Portafolio | Desarrollador Web</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Portfolio</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hola, soy</span>
+                    <span class="title-name gradient-text">Desarrollador Web</span>
+                </h1>
+                <p class="hero-subtitle">Creando experiencias digitales increíbles con HTML5, CSS3 y JavaScript</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">script.js</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code id="typingCode"></code></pre>
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Especializado en crear interfaces de usuario modernas, responsivas y accesibles utilizando las
+                        últimas tecnologías web.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Diseño UI/UX</h3>
+                    <p>Enfocado en crear experiencias de usuario intuitivas y visualmente atractivas que cautivan y
+                        convierten.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Optimización</h3>
+                    <p>Comprometido con el rendimiento web, asegurando tiempos de carga rápidos y experiencias fluidas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <p class="section-subtitle">Explora mis demostraciones interactivas</p>
+            <div class="projects-grid">
+                <a href="gallery.html" class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-view">Ver Proyecto →</span>
+                        </div>
+                        <div class="project-preview gallery-preview">
+                            <div class="preview-grid">
+                                <div class="preview-item"></div>
+                                <div class="preview-item"></div>
+                                <div class="preview-item"></div>
+                                <div class="preview-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Galería Interactiva</h3>
+                        <p>Grid dinámico con efectos hover avanzados y filtros</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS Grid</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="calculator.html" class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-view">Ver Proyecto →</span>
+                        </div>
+                        <div class="project-preview calculator-preview">
+                            <div class="calc-display">0</div>
+                            <div class="calc-buttons">
+                                <div class="calc-btn">7</div>
+                                <div class="calc-btn">8</div>
+                                <div class="calc-btn">9</div>
+                                <div class="calc-btn">÷</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculadora Avanzada</h3>
+                        <p>Calculadora funcional con diseño premium y animaciones</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Eventos</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="dashboard.html" class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-view">Ver Proyecto →</span>
+                        </div>
+                        <div class="project-preview dashboard-preview">
+                            <div class="chart-bars">
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard de Datos</h3>
+                        <p>Visualización de datos con gráficos animados en tiempo real</p>
+                        <div class="project-tags">
+                            <span class="tag">Canvas API</span>
+                            <span class="tag">Charts</span>
+                            <span class="tag">Animations</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="game.html" class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-view">Ver Proyecto →</span>
+                        </div>
+                        <div class="project-preview game-preview">
+                            <div class="game-elements">
+                                <div class="game-circle"></div>
+                                <div class="game-square"></div>
+                                <div class="game-triangle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Juego Interactivo</h3>
+                        <p>Mini juego para demostrar lógica y manejo de eventos</p>
+                        <div class="project-tags">
+                            <span class="tag">Game Logic</span>
+                            <span class="tag">DOM</span>
+                            <span class="tag">Events</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path
+                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" placeholder=" " required>
+                        <label for="name" class="form-label">Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-input" placeholder=" " required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" class="form-input" rows="5" placeholder=" " required></textarea>
+                        <label for="message" class="form-label">Mensaje</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Enviar Mensaje</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>vasquezjack52@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h4>Teléfono</h4>
+                        <p>+51 901630948</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h4>Ubicación</h4>
+                        <p>Guadalupe, Perú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mi Portafolio. Hecho con ❤️ y JavaScript</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
